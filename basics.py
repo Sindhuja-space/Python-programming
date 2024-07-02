@@ -45,7 +45,8 @@ else:
     pounds = weight / 0.45
     print(f"You are {pounds} pounds")
 
-'''
+    
+GUESSING GAME:
 
 secret_number = 9
 guess_count = 0 
@@ -59,6 +60,39 @@ while guess_count < guess_limit:
         break 
 else:
     print("Sorry, You Failed")
+
+'''
+
+
+command = ""
+started = False 
+
+
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+            print("The car is already started!")
+        else:
+            started = True
+            print("Car Started...")
+    elif command == "stop":
+        if not started:
+            print("The car is already stopped!")
+        else:
+            started = False
+            print("Car Stopped")
+    elif command == "help":
+        print("""
+start - to start the car
+stop  - to stop the car
+quit  - quit to quit""")
+    elif command == "quit":
+        break
+    else:
+        print("I don't understand that!")
+
+
 
 
 
