@@ -61,12 +61,11 @@ while guess_count < guess_limit:
 else:
     print("Sorry, You Failed")
 
-'''
 
-
+CAR GAME:
+    
 command = ""
 started = False 
-
 
 while True:
     command = input("> ").lower()
@@ -91,6 +90,29 @@ quit  - quit to quit""")
         break
     else:
         print("I don't understand that!")
+
+        
+F SHAPE PATTERN:
+
+numbers = [5,2,5,2,2]
+
+for number in numbers:
+    print(number * 'x')
+
+'''
+
+numbers = [10,30,50,80,20,40,60,90,70]
+maximum = numbers[0]
+
+for number in numbers:
+    if number > maximum:
+        maximum = number
+print(maximum)
+
+
+
+
+
 
 
 
