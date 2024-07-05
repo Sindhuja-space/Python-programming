@@ -99,7 +99,8 @@ numbers = [5,2,5,2,2]
 for number in numbers:
     print(number * 'x')
 
-'''
+
+FIND MAXIMUM:    
 
 numbers = [10,30,50,80,20,40,60,90,70]
 maximum = numbers[0]
@@ -108,6 +109,36 @@ for number in numbers:
     if number > maximum:
         maximum = number
 print(maximum)
+
+
+UNIQUE NUMBERS:
+
+numbers = [1,2,3,1,2,3,4,5,5,6]
+unique = []
+
+for number in numbers:
+    if number not in unique:
+        unique.append(number)
+print(unique)
+
+'''
+
+import random
+
+class Dice:
+    def roll(self):
+        first = random.randint(1,6)
+        second = random.randint(1,6)
+        return first, second 
+    
+
+dice = Dice()
+print(dice.roll())
+       
+    
+
+
+
 
 
 
